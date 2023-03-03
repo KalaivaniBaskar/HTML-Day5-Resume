@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalaivani - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/e2024a82b4.js" crossorigin="anonymous"></script>
+
+    <style>                             
+        .res-out{                                    
+            width: 100%;
+            height : 100%; 
+            margin-bottom: 3rem;
+        }
+       .res-out-head{
+            width: auto;
+            height: 12rem; 
+            /* background-color: rgb(247, 242, 172);  */
+            background-image: linear-gradient(to right, rgb(28, 28, 183),white, rgb(28, 28, 183));
+            position : relative;         
+            /* border: 2px solid black; */
+        }
+        .res-out-headb{
+            height:2rem;
+            height:2rem;
+            background-image: linear-gradient(to right, rgb(28, 28, 183),white, rgb(28, 28, 183));
+            /* background-image: linear-gradient(to right, rgb(57, 57, 243),white, rgb(57, 57, 243)); */
+            /* background-image: linear-gradient(to right, gray,white, gray); */
+
+        }
+        .res-out-bodyb{
+            height:4rem;
+            margin-top: 1.6rem;
+            /* background-color: gray; */
+            background-image: linear-gradient(to right, rgb(28, 28, 183),white, rgb(28, 28, 183));
+        }
+        .res-out-body{
+            background-color: white;
+            border: 1px solid gray;
+            padding-bottom: 2rem;
+        }
+        .res-out-head1 { 
+            height: 35%;
+            /* background-color: gray; */
+        }
+        .res-out-head2 { 
+            height: 60%;
+            /* background-color: gray; */
+        }
+        .res-out-head3 { 
+            height: 5%;
+        } 
+        .res-out-head5{
+        position: relative; 
+        border: 3px dotted green;
+        }
+          .name-tag{
+            background-color: rgb(240, 184, 63);
+            width: 80%;
+            border: 0.5px dotted black; 
+            border-radius: 3%;
+            box-shadow: 0.1rem 0.2rem grey; 
+            margin-left: 5rem;
+            /* position:absolute;
+            top: 12.5rem; 
+            left: 28rem; */
+        }  
+        .name-col{
+            text-align: center;
+        }
+        .res-name{ 
+            /* margin-top: 1rem;; */
+            font-size: 2.5rem;
+            font-weight: 600; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+        #dp-pic{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            background-color: grey;
+            outline: 0.4rem dotted rgb(226, 149, 5);
+            /* position:absolute; 
+            top: 4.8rem; 
+            left: 36rem; */
+        } 
+        #profile{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            object-fit: fill;
+        } 
+        .img-bg{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: grey;
+            border: 3px dotted yellow; 
+            /* position: relative;  */           
+        } 
+        .addr {
+            border-bottom: 1px dashed black;
+            background-color: white;
+            text-align: center;   
+            padding-top: 0.5 rem;
+            margin-top: 0.6rem;
+        } 
+        .addr-txt{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2rem;
+        } 
+        .icon-title{
+            text-align: left;
+            padding-top: 0.7rem;;
+            /* padding-left: 2.5rem;; */
+        }
+        /* .title-set{
+            border-bottom: 1px dashed gray;
+        } */
+        /* .left-body, .right-body{
+            margin-left: 0.5rem;
+        }  */
+        .row-body{
+            width: 100%;
+            height: 100%;
+            margin-top: 1rem;
+            /* outline: 1px solid green; */
+        }
+        .left-body-inner{
+            margin-left: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(241, 245, 246);
+        }
+        .right-body-inner{
+            margin-left: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(241, 245, 246);
+        }
+        .right-body-inner li{
+            font-weight: 500;
+        }
+        .para-set-txt{
+            margin: 1rem;
+            text-align: justify;
+        }    
+        label, .tb{
+            font-weight: 500;
+            text-align: justify;
+        }   
+        [for="mark"]{
+            border: 1px dashed gray;
+            background-color: white;
+            box-shadow: 1px 1px brown ;
+        }
+        .addr a{
+            text-decoration: none;
+            color: black;
+        }
+        .addr a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+        input[type = "range"]::-webkit-slider-runnable-track {
+                    width: 100%;
+                    height: 11px;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 1px #000000;
+                    background: #b6ee0e;
+                    border-radius: 1px;
+                    border: 0px solid #010101;
+                   }
+        /* input[type="range"]::-webkit-slider-thumb {
+                    box-shadow: 1px 1px 1px #000031;
+                    border: 1px solid #00001E;
+                    height: 26px;
+                    width: 26px;
+                    border-radius: 15px;
+                    background: #FFFFFF;
+                    cursor: pointer;
+                    -webkit-appearance: none;
+                    margin-top: -8px;
+        } */
+        
+      
+    </style>
+</head>
+<body> 
+    <div class="container resume-out">
+        <div class="container res-out"> 
+
+        <div class="container res-out-head">
+            <div class="row res-out-head1">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row res-out-head2">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <div class="dp-pic-border">
+                        <div id="dp-pic">
+                            <span class="res-icon" style="font-size: 6rem; color: rgb(115, 200, 236); padding-left: 2.3rem;">
+                                <i class="fa-solid fa-user "> </i>
+                            </span>    
+                            <!-- <img id="profile" src ="images/dpp.png" alt="Profile pic"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div> 
+            <div class="row res-out-head3">
+                <div class="col-md-3"></div>
+                <div class="col-md-5 name-col">
+                    <div class="name-tag">
+                        <p class="res-name">KALAIVANI BASKAR</p>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div> 
+        </div>
+        <div class="container res-out-headb">
+            <div class="row res-out-head4">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div class="container res-out-bodyb">
+            <div class="row res-out-bodyp">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div class="container res-out-body">
+            <div class="container res-out-body-layer"> 
+                <div class="row body addr">
+                    <p class = "addr-txt">6B, MMC, Chennai 600051 | +91-9900099599 |<a href="mailto:kalaivani.working@gmail.com">kalaivani.working@gmail.com</a>  | <a href="https://github.com/KalaivaniBaskar" target="_blank">GitHub: KalaivaniBaskar</a></p>
+                </div>
+                <div class="row row-body">
+                    <div class="col-md-6 left-body"> 
+                        <div class="col left-body-inner"> 
+                        <div class="row title-set">
+                            <div class="col-md-1">
+                                <div class = "img-bg">
+                                    <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.7rem;">
+                                    <i class="fa-solid fa-user "> </i>
+                                    </span>    
+                                </div> 
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6 icon-title">
+                                <h4>Profile</h4>
+                            </div>
+                        </div>
+                        <div class="row para-set">
+                            <div class = "col ">
+                                <p class="para-set-txt tb"> 
+                                    Ambitious learner and solution seeker, excited to restart. Seeking for a well-defined position with an innovative and challenging environment that utilizes my skills and provides stimulating opportunities for my career growth.
+                                </p> 
+                            </div>                             
+                        </div> 
+                        <div class="row title-set">
+                            <div class="col-md-1">
+                                <div class = "img-bg">
+                                    <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.4rem;">
+                                        <i class="fa-solid fa-laptop-code"></i>
+                                    </span>    
+                                </div> 
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6 icon-title">
+                                <h4>Skills</h4>
+                            </div>
+                        </div>
+                        <div class="row para-set">
+                            <div class = "col">
+                                <div class="row tech">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <p><b>Technical Skills</b></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                                <div class="row tech-val">
+                                     <div class="row tech-val-in html">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="html">HTML :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="html" name="html" value="75" disabled>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in css">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="html">CSS :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="css" name="css" value="60" disabled>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in js">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="html">Javascript :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="js" name="js" value="70" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in java">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="java">Java :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="java" name="java" value="65" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in cpp">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="cpp">C++ :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="cpp" name="cpp" value="40" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in rct">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="rct">React :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="rct" name="rct" value="20" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in node">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="node">Node.js :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="node" name="node" value="20" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row tech-val-in mongo">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="mongo">MongoDB :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="mongo" name="mongo" value="20" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                </div>
+                                <div class="row additional">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <p><b>Additional Skills</b></p>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <div class="row additional-val">
+                                    <div class="row additional-val-in ms">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <label for="ms">MS Office :</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="range" class="form-range" id="ms" name="ms" value="70" disabled >
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                     </div>
+                                     <div class="row additional-val-in eng">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-3">                                           
+                                            <label for="eng">English:</label>
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="col-md-3">
+                                           <label for="tam">Tamil :</label>
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="col-md-3">                                           
+                                            <label for="tam">Hindi :</label>
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                                <div class="row additional-br">
+                                    <div class="col-md-12"><br></div>
+                                </div>
+                               
+                            </div>                             
+                        </div>
+                        <div class="row title-set">
+                            <div class="col-md-1">
+                                <div class = "img-bg">
+                                    <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.5rem;">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </span>    
+                                </div> 
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-6 icon-title">
+                                <h4>Work Experience</h4>
+                            </div>
+                        </div>
+                        <div class="row para-set">
+                            <div class = "col ">
+                                <p class="para-set-txt"> 
+                                    <span class="tb">Infosys Limited: </span> - 07/2013 to 04/2015 <br>
+                                <!-- </p> 
+                                <p class="para-set-txt">  -->
+                                    <span class="tb"> Systems Engineer </span>@ Pune SEZ and Chennai SEZ <br>
+                                <!-- </p>  -->
+                                <!-- <p class="para-set-txt">  -->
+                                    <span class="tb">Domain: </span>Mainframe Programming languages: COBOL, JCL <br>
+                                </p>
+                            </div>                             
+                        </div> 
+                             
+                       </div>
+                    </div>
+                    <div class="col-md-6 right-body">
+                        <div class="col right-body-inner">
+                            <div class="row title-set">
+                                <div class="col-md-1">
+                                    <div class = "img-bg">
+                                        <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.5rem;">
+                                            <i class="fa-solid fa-briefcase"></i>
+                                        </span>    
+                                    </div> 
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-6 icon-title">
+                                    <h4>Work Experience</h4>
+                                </div>
+                            </div>
+                            <div class="row para-set">
+                                <div class = "col ">
+                                    <p class="para-set-txt "> 
+                                        <ul>
+                                            <li><span class="tb" style="text-decoration: underline;">BNSF Railway - Backend maintenance :</span></li>
+                                        </ul>
+                                    </p> 
+                                    <p class="para-set-txt ">
+                                        <ul>
+                                        <li><span class="tb">Co-operate with development team to create clean and stable interfaces for a better 
+                                            functioning system without disruptions.</span>
+                                        </span></li>
+                                        <li><span class="tb">Make minor changes to existing COBOL programs to improve performance and efficiency.</span></li>
+                                        <li><span class="tb">Perform root cause analysis for JOB failures in mainframe batch processing.</span></li>    
+                                    </ul>                                    
+                                    </p>
+                                </div>                             
+                            </div> 
+                            <div class="row title-set">
+                                <div class="col-md-1">
+                                    <div class = "img-bg">
+                                        <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.7rem;">
+                                            <i class="fa-solid fa-user-graduate"></i>
+                                        </span>    
+                                    </div> 
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-6 icon-title">
+                                    <h4>Education</h4>
+                                </div>
+                            </div>
+                            <div class="row para-set">
+                                <div class = "col ">
+                                    <p class="para-set-txt edu ">
+                                        <ul style="list-style-type: circle; margin-left: 2rem;">
+                                        <li><span class="tb">B.E. Electronics & Communication <i class="fa-solid fa-arrow-right"></i> (2008 - 2012) <i class="fa-solid fa-arrow-right"></i>
+                                            <label for="mark"> 71.90 <i class="fa-solid fa-percent"></i></label>    
+                                        <br> Jaya Engineering College, Thiruninravur.</span></li><br>
+                                        <li><span class="tb">Higher Secondary: Computer Science, Maths <i class="fa-solid fa-arrow-right"></i> (2008) <i class="fa-solid fa-arrow-right"></i>
+                                            <label for="mark"> 93.80 <i class="fa-solid fa-percent"></i></label>       
+                                        <br>  Velammal Matriculation HSS, Mogappair West. </span></li><br>
+                                        <li><span class="tb">SSLC: Matriculation <i class="fa-solid fa-arrow-right"></i> (2006) <i class="fa-solid fa-arrow-right"></i>
+                                            <label for="mark"> 86.66 <i class="fa-solid fa-percent"></i></label>
+                                        <br>  Alagappa Matriculation HSS, Purasaiwalkam. </span></li> 
+                                    </ul>                                    
+                                    </p>
+                                </div>                             
+                            </div> 
+                            <div class="row title-set">
+                                <div class="col-md-1">
+                                    <div class = "img-bg">
+                                        <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.6rem; padding-top: 0.4rem;">
+                                            <i class="fa-solid fa-certificate"></i>
+                                        </span>    
+                                    </div> 
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-6 icon-title">
+                                    <h4>Certificates</h4>
+                                </div>
+                            </div>
+                            <div class="row para-set">
+                                <div class = "col ">
+                                    <p class="para-set-txt edu ">
+                                        <ul style="list-style-type: circle; margin-left: 2rem;">
+                                            <li><span class="tb">Full Stack Web Development : MERN Stack - GUVI Zen Class, IIT-M Research Park, Tharamani, Chennai.</span></li>
+                                            <li><span class="tb">JavaScript - GUVI Certification</span></li>
+                                        <li><span class="tb">English Impact Course - Upper Intermediate Level at the British Council, Mount Road, Chennai.</span></li>
+                                        
+                                    </ul>                                    
+                                    </p>
+                                </div>                             
+                            </div> 
+                            <div class="row title-set">
+                                <div class="col-md-1">
+                                    <div class = "img-bg">
+                                        <span class="res-icon" style="font-size: 1.5rem; color: rgb(229, 245, 12); padding-left: 0.6rem; padding-top: 0.4rem;">
+                                            <i class="fa-solid fa-code"></i>
+                                        </span>    
+                                    </div> 
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-6 icon-title">
+                                    <span class="tb addr mini"><a href="https://subtle-palmier-ba1eac.netlify.app" target="_blank">Task : Event Booking Layout </a></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>
